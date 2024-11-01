@@ -102,7 +102,7 @@ export const savePost = async (req, res) => {
 
             await prisma.savedPost.delete({
                 where: {
-                    id: savePost.id,
+                    id: savedPost.id,
                 },
             });
 
